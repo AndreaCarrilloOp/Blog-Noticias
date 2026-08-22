@@ -130,7 +130,7 @@ El proyecto está configurado para publicarse en **Netlify** desde el repositori
 ```toml
 [build]
   command = "npm run generate"
-  publish = ".output/public"
+  publish = "dist"
 
 [[redirects]]
   from = "/"
