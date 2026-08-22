@@ -12,9 +12,6 @@ Blog de noticias nacionales desarrollado con **Nuxt 4** y **Nuxt Content** como 
 **Web desplegada:**
 https://blog-noticias-cr.netlify.app
 
-**Repositorio:**
-https://github.com/AndreaCarrilloOp/Blog-Noticias
-
 ## Contenido
 
 El blog contiene **nueve noticias nacionales**, distribuidas en tres categorías:
