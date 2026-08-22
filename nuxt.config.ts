@@ -1,11 +1,4 @@
 export default defineNuxtConfig({
   compatibilityDate: '2026-01-01',
-  modules: ['@nuxt/content'],
-
-  nitro: {
-    prerender: {
-      routes: ['/blog'],
-      ignore: ['/']
-    }
-  }
+  modules: ['@nuxt/content']
 })

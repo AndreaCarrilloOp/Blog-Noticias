@@ -13,7 +13,7 @@ const { data: posts } = await useAsyncData(`categoria-${route.params.categoria}`
 <template>
   <div class="container">
     <p>
-      <NuxtLink to="/blog">
+      <NuxtLink to="/">
         ← Volver al blog
       </NuxtLink>
     </p>
