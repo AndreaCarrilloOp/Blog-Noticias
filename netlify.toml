@@ -6,3 +6,8 @@
   from = "/"
   to = "/blog"
   status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/200.html"
+  status = 200
