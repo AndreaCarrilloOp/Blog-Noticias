@@ -10,7 +10,7 @@ Blog de noticias nacionales desarrollado con **Nuxt 4** y **Nuxt Content** como 
 ## Sitio
 
 **Web desplegada:**
-`PENDIENTE_DE_PUBLICAR`
+https://blog-noticias-cr.netlify.app
 
 **Repositorio:**
 https://github.com/AndreaCarrilloOp/Blog-Noticias
