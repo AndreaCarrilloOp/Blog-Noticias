@@ -1,0 +1,39 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #262626;
+  background: #fff;
+  line-height: 1.65;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #235c79; }
+a:hover { color: #153e51; }
+.container { width: min(100% - 2rem, 760px); margin-inline: auto; }
+.site-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.site-content { flex: 1; padding: 2rem 0 3.5rem; }
+.site-header { border-bottom: 1px solid #e5e7eb; }
+.site-header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; }
+.site-brand { color: #232323; font-size: 1.15rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.site-nav { display: flex; flex-wrap: wrap; gap: .35rem 1rem; }
+.site-nav a { color: #414141; text-decoration: none; }
+.site-nav a.router-link-active { color: #235c79; text-decoration: underline; text-underline-offset: .3rem; }
+.site-footer { border-top: 1px solid #e5e7eb; color: #666; font-size: .9rem; padding: 1rem 0; }
+h1, h2, h3, h4 { line-height: 1.25; }
+h1 { font-size: clamp(1.7rem, 4vw, 2.2rem); }
+h2 { font-size: 1.35rem; }
+ul { padding-left: 1.4rem; }
+li { margin-block: .65rem; }
+input[type="search"] { width: 100%; max-width: 28rem; padding: .65rem .8rem; border: 1px solid #c8cdd1; border-radius: .3rem; font: inherit; }
+article img { max-width: 100%; height: auto; }
+.author { display: flex; gap: .8rem; align-items: flex-start; margin-block: 2rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; }
+.author img { border-radius: 50%; object-fit: cover; }
+.author h4, .author p { margin: 0 0 .25rem; }
+.justify-between { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.capitalize { text-transform: capitalize; }
+.button { display: inline-block; padding: .5rem .7rem; border: 1px solid #d1d5db; border-radius: .3rem; text-decoration: none; }
+:focus-visible { outline: 2px solid #235c79; outline-offset: 3px; }
+@media (max-width: 610px) {
+  .site-header-inner { align-items: flex-start; flex-direction: column; }
+  .site-content { padding-top: 1.5rem; }
+}
