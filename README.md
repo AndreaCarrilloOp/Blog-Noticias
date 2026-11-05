@@ -3,7 +3,6 @@
 [![Nuxt](https://img.shields.io/badge/Nuxt-4.5.2-00DC82?logo=nuxtdotjs\&logoColor=white)](https://nuxt.com/)
 [![Nuxt Content](https://img.shields.io/badge/Nuxt%20Content-enabled-00DC82?logo=nuxtdotjs\&logoColor=white)](https://content.nuxt.com/)
 [![Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?logo=netlify\&logoColor=white)](https://www.netlify.com/)
-![Status](https://img.shields.io/badge/status-pending-lightgrey)
 
 Blog de noticias nacionales desarrollado con **Nuxt 4** y **Nuxt Content** como parte de una actividad académica de Arquitectura de Información.
 
@@ -52,17 +51,22 @@ El proyecto aplica los conceptos trabajados en clase:
 
 ```text
 app/
+├── app.vue
 ├── components/
 │   ├── AppSearchInput.vue
 │   ├── Author.vue
-│   └── PrevNext.vue
-├── pages/
-│   └── blog/
-│       ├── index.vue
-│       ├── [...slug].vue
-│       └── [categoria]/
-│           └── index.vue
-└── app.vue
+│   ├── PrevNext.vue
+│   ├── TheHeader.vue
+│   └── TheFooter.vue
+├── layouts/
+│   └── default.vue
+└── pages/
+    ├── index.vue
+    └── blog/
+        ├── index.vue
+        ├── [...slug].vue
+        └── [categoria]/
+            └── index.vue
 
 content/
 └── blog/
@@ -80,15 +84,21 @@ content/
         └── 03.blessd-parque-viva.md
 
 public/
+├── css/
+│   ├── normalize.css
+│   └── skeleton.css
 └── images/
     └── authors/
         └── avatar.png
 
+.gitignore
 content.config.ts
 nuxt.config.ts
 netlify.toml
+package-lock.json
 package.json
 README.md
+tsconfig.json
 ```
 
 ## Ejecución
