@@ -1,6 +1,13 @@
+<script setup>
+useHead({
+  title: 'Categorías',
+  meta: [{ name: 'description', content: 'Noticias nacionales de sucesos, deportes y espectáculos.' }]
+})
+</script>
+
 <template>
-  <div class="container">
-    <h1>Blog de noticias</h1>
+  <main class="container">
+    <h1>Categorías</h1>
     <AppSearchInput />
     <ul>
       <li>
@@ -19,5 +26,5 @@
         </NuxtLink>
       </li>
     </ul>
-  </div>
+  </main>
 </template>
