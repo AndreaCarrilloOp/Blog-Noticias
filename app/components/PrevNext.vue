@@ -6,10 +6,8 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex justify-between">
+  <nav v-if="prev || next" class="prev-next" aria-label="Otras noticias de esta categoría">
     <NuxtLink v-if="prev" :to="prev.path" class="button">← {{ prev.title }}</NuxtLink>
-    <span v-else>&nbsp;</span>
     <NuxtLink v-if="next" :to="next.path" class="button">{{ next.title }} →</NuxtLink>
-    <span v-else>&nbsp;</span>
-  </div>
+  </nav>
 </template>
