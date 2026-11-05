@@ -11,13 +11,8 @@ const { data: posts } = await useAsyncData(`categoria-${route.params.categoria}`
 </script>
 
 <template>
-  <div class="container">
-    <p>
-      <NuxtLink to="/">
-        ← Volver al blog
-      </NuxtLink>
-    </p>
-
+  <main class="container">
+    <p><NuxtLink to="/blog">← Volver a categorías</NuxtLink></p>
     <h1 class="capitalize">{{ route.params.categoria }}</h1>
     <ul>
       <li v-for="post in posts" :key="post.path">
@@ -27,5 +22,5 @@ const { data: posts } = await useAsyncData(`categoria-${route.params.categoria}`
         </NuxtLink>
       </li>
     </ul>
-  </div>
+  </main>
 </template>
